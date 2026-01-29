@@ -4,12 +4,10 @@
 ![AI](https://img.shields.io/badge/AI-Decision_Support-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Finished-brightgreen?style=for-the-badge)
 
-> **Projet : Aide à la Décision et Intelligence Artificielle (L3 Informatique)** 
-> *Université de Caen Normandie — 2025-2026* 
+> **Projet : Aide à la Décision et Intelligence Artificielle (L3 Informatique)**
+> *Université de Caen Normandie — 2025-2026*
 
-Ce projet consiste en une implémentation d'un système décisionnel complet appliqué au domaine du **Monde des Blocs** (*Blocks World*), capable de modéliser des états formels complexes , de calculer des séquences de déplacements optimaux et de résoudre des problèmes de satisfaction de contraintes (CSP). Le projet inclut un module d'extraction de connaissances, capable d'analyser des bases de données d'états afin d'identifier automatiquement des motifs récurrents et des règles d'association .
----
-
+Ce projet consiste en une implémentation d'un système décisionnel complet appliqué au domaine du Monde des Blocs (Blocks World), capable de modéliser des états formels complexes, de calculer des séquences de déplacements optimaux et de résoudre des problèmes de satisfaction de contraintes (CSP). Le projet inclut un module d'extraction de connaissances, capable d'analyser des bases de données d'états afin d'identifier automatiquement des motifs récurrents et des règles d'association.
 ## Architecture et Modules Techniques
 
 Le projet est divisé en packages modulaires, chacun gérant une facette spécifique de l'intelligence artificielle
