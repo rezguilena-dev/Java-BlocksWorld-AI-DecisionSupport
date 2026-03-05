@@ -49,37 +49,37 @@ Utilisation de solveurs dans le but de générer des configurations valides resp
 
 ## Installation & Exécution
 
-Le projet dépend des bibliothèques externes `blocksworld.jar` et `bwgenerator.jar` fournies par l'équipe pédagogique de l'Université de Caen et situées dans le dossier `lib/`.
-
-### 1. Compilation
-Les fichiers sources sont compilés et placés dans le répertoire `out/`. Depuis la racine du projet  :
+Le projet utilise un script `Bash` (run_project.sh) afin de centraliser la compilation, l'exécution des différents modules et la génération de la documentation .
+Voici les étapes à suivre 
+### 1.Prérequis
+avant la première utilisation veuillez accorder les droits d'exécution au script :
 ```
-javac -d out -cp "lib/blocksworld.jar:lib/bwgenerator.jar" -sourcepath src src/blocksworld/*.java
+chmod +x run_project.sh
  ```
 
-### 2.Execution 
-Chaque partie possède sa propre classe exécutable :
+### 2.Utilisation du script 
+Le script compile automatiquement les sources dans le répertoire out/ avant chaque lancement.Chaque module est accessible via un argument spécifique :
   #### 2-1 Modelisation : 
 ```
-java -cp "out:lib/blocksworld.jar:lib/bwgenerator.jar" blocksworld.MainModelling
+./run_project.sh modeling
  ```
 
 #### 2-2 Planification :
 ```
-java -cp "out:lib/blocksworld.jar:lib/bwgenerator.jar" blocksworld.MainPlanning
+./run_project.sh planning
  ```
 #### 2-3 Satisfaction de contraintes :
 ```
-java -cp "out:lib/blocksworld.jar:lib/bwgenerator.jar" blocksworld.MainCSP
+./run_project.sh csp
  ```
 #### 2-4 Datamining :
 ```
-java -cp "out:lib/blocksworld.jar:lib/bwgenerator.jar" blocksworld.MainMining
+./run_project.sh mining
  ```
-### 3.Documentation : 
-Pour générer la documentation technique du projet dans le dossier doc/ :
+#### 2-5.Documentation : 
+Pour générer la documentation technique du projet dans le dossier docs/ veuillez lancer la commande suivante:
 ```
-javadoc -d doc -sourcepath src -subpackages blocksworld cp datamining modelling planning -classpath "lib/*"
+./run_project.sh doc
  ```
 
 ## Organisation et Arborescence: 
@@ -93,8 +93,10 @@ javadoc -d doc -sourcepath src -subpackages blocksworld cp datamining modelling 
 │   └── datamining/     # Algorithmes de fouille de données
 ├── lib/                # Bibliothèques externes (.jar)
 ├── out/                # Fichiers compilés (.class)
-├── doc/                # Javadoc et Rapport PDF
+├── docs/                # Javadoc et Rapport PDF
 └── README.md
+└── run_project.sh      #script d'automatisation(Build, Run & Doc)
+
    ```
 
 ## Équipe de Développement
