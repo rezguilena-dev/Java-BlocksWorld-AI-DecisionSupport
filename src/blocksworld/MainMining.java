@@ -14,7 +14,7 @@ import bwgeneratordemo.Demo;
  * Génération de données : Création d'une base de données d'états aléatoires (transactions).
  * Propositionnalisation : Conversion des états complexes en ensembles de variables booléennes via { BlocksWorldConverter}.
  * Extraction de motifs (Étape 1) : Utilisation de l'algorithme { Apriori} pour trouver les combinaisons fréquentes d'items.
- * Génération de règles (Étape 2) : Utilisation de { BruteForceAssociationRuleMiner} pour déduire des règles d'association (Si X alors Y) avec une confiance élevée.</li>
+ * Génération de règles (Étape 2) : Utilisation de { BruteForceAssociationRuleMiner} pour déduire des règles d'association (Si X alors Y) avec une confiance élevée.
  *
  * 
  */

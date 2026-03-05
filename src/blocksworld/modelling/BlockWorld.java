@@ -11,12 +11,12 @@ import modelling.*;
  * </p>
  * <p>
  * Les contraintes générées incluent :
+ * </p>
  * <ul>
  *     <li>Les contraintes d'unicité (aucun bloc ne peut être au même endroit qu'un autre)</li>
  *     <li>Les contraintes "fixed" (un bloc sous un autre doit être indéplaçable)</li>
  *     <li>Les contraintes "free" (si un bloc est sur une pile, la pile n'est pas libre)</li>
  * </ul>
- * </p>
  */
 public class BlockWorld {
 
